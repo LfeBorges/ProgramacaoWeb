@@ -1,2 +1,2 @@
 # ProgramacaoWeb
-Este repsoitorio contem atividades sobre programação web. Utilizando Boostrap e php
+Este repositorio contem aulas e atividades sobre programação web. Utilizando Boostrap e php
