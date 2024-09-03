@@ -8,7 +8,7 @@
 </head>
 <body>
     <main class="container mt-5">
-        <h4>Formulário I</h4>
+        <h2 class="d-flex justify-content-start mt-5 fs-5 pb-2">Formulário I</h2>
         <form action="resposta.php" method="post">
             <div class="row">
                 <div class="col-5">
@@ -125,4 +125,94 @@
                 </div>
             </div>
         </form>
+        <h2 class="d-flex justify-content-start mt-5 fs-5 pb-2">Formulário III</h2>
+        <form action="resposta.php" method="post" >
+            <div class="row">
+            <p class="fs-5 d-flex justify-content-center mb-3">Sample Form</p>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-auto">
+                    <label for="ptrname" class="form-label">Partner Name</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" name="ptrname" id="ptrname" class="form-control">
+                </div>
+                <div class="col-auto">
+                    <label for="ptremail" class="form-label">Partner Email ID</label>
+                </div>
+                <div class="col-auto">
+                    <input type="email" name="ptreamil" id="ptreamil" class="form-control">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="col-auto">
+                    <label for="ptrLname" class="form-label">Partner Legal Name</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" name="ptrLname" id="ptrLname" class="form-control">
+                </div>
+                <div class="col-auto">
+                    <label for="ptrmobile" class="form-label">Partner mobile</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" name="ptrmobile" id="ptrmobile" class="form-control">
+                </div>
+            </div>
+            <div class="row  mt-5">
+                <div class="col-2">
+                    <label for="padress" class="form-label">Partner Address</label>
+                </div>
+                <div class="col-10 ">
+                    <textarea name="padress" id="padress" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="col-auto">
+                    <label for="startDate" class="form-label">Contract Start Date</label>
+                </div>
+                <div class="col-auto ">
+                    <input type="date" name="startDate" id="startDate" class="form-control" placeholder="Date Start">
+                </div>
+                <div class="col-auto">
+                    <label for="expiryDate" class="form-label">Contract Expiry Date</label>
+                </div>
+                <div class="col-auto">
+                    <input type="date" name="expiryDate" id="expiryDate" class="form-control" placeholder="Date end">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="col-auto">
+                    <label for="MinAmount" class="form-label">Minimum Loan Amount</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" name="MinAmount" id="MinAmount" class="form-control" >
+                </div>
+                <div class="col-auto">
+                    <label for="MaxAmount" class="form-label">Maximum Loan Amount</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" name="MaxAmount" id="MaxAmount" class="form-control" >
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="col-auto">
+                    <label for="intRate" class="form-label">Interest Rate</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" name="intRate" id="intRate" class="form-control" >
+                </div>
+                <div class="col-auto">
+                    <label for="depRate" class="form-label">Deposit Amount</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" name="depRate" id="depRate" class="form-control" >
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </form>
+
 </body>
