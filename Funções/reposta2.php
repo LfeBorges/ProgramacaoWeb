@@ -26,9 +26,9 @@
         try
         {
             $valor1 = (int) $_POST["valor1"] ?? 0;
-            $valor2 = (int) $_POST["valor2"];
+            $valor2 = (int) $_POST["valor2"] ?? 0;
             $soma = soma($valor1, $valor2);
-            echo"<p>Soma: $soma</p>"
+            echo"<p>Soma: $soma</p>";
             $subtracao($valor1, $valor2);
             saudacao();
             saudacao("Vasco");

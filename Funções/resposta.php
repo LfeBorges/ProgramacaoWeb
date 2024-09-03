@@ -14,7 +14,7 @@
         {
             $valor = $POST["valor"];
             $qtd_caracteres = strlen($valor);
-            echo "<p>Quantidade de caracteres {$qtd_caracteres}</p>"
+            echo "<p>Quantidade de caracteres {$qtd_caracteres}</p>";
             $maiusculo = strtoupper($valor);
             $minusculo = strtolower($valor);
             echo"<p>Maiusculo: $maiusculo</p>";
@@ -28,7 +28,7 @@
             }
             else
             {
-                echo"<p>Data iválida</p>"
+                echo"<p>Data iválida</p>";
             }
             #Funções Numéricas
             $menor = min(1,2,3,4,5,);
@@ -39,7 +39,7 @@
             echo"<p>Aleatorio: $aleatorio</p>";
             $numero = 1576.98;
             $moeda = number_format($numero, 2, ",", ".");
-            echo"<p>R$ $moeda </p>"
+            echo"<p>R$ $moeda </p>";
         }
         catch(Exception $e)
         {
