@@ -25,7 +25,7 @@
                     }
                     catch (Exception $e)
                     {
-                        echo "ERRO" . $e ->getMessage()
+                        echo "ERRO" . $e ->getMessage();
                     }
                 }
             ?>
