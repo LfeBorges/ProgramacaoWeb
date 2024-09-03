@@ -53,4 +53,76 @@
                 </div>               
             </div>
         </form>
+        <h2 class="d-flex justify-content-start mt-5 fs-5 pb-2">Formulário II</h2>
+        <form action="resposta.php" method="post" >
+            <div class="row ">
+                <div class="col-1">
+                    <label for="codigo" class="form-label fw-bold ">Código</label>
+                    <input type="text" name="codigo" id="codigo" placeholder="32" class="form-control bg-secondary">
+                </div>
+                <div class="col-4">
+                    <label for="nome" class="form-label fw-bold">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo do Cliente" class="form-control">
+                </div>                
+                <div class="col-4">
+                    <label for="email" class="form-label fw-bold">E-mail</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="cliente@dominio.com">
+                </div>
+                <div class="col-3">
+                    <label for="cpf" class="form-label fw-bold">CPF</label>
+                    <input type="number" name="cpf" id="cpf" class="form-control" placeholder="Só numeros">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <label for="celular" class="form-label fw-bold">Nº Celular</label>
+                    <input type="text" name="celular" id="celular" placeholder="Nº Celular" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="telefone" class="form-label fw-bold">Nº Telefone fixo</label>
+                    <input type="text" name="telefone" id="telefone" placeholder="Nº telefone" class="form-control">
+                </div>                
+                <div class="col">
+                    <label for="cep" class="form-label fw-bold">CEP</label>
+                    <input type="text" name="cep" id="cep" class="form-control" placeholder="ex:19045380">
+                </div>
+                <div class="col">
+                    <label for="logradouro" class="form-label fw-bold">Logradouro</label>
+                    <input type="text" name="logradouro" id="logradouro" class="form-control" placeholder="ex:Rua 1400.">
+                </div>
+                <div class="col-1">
+                    <label for="n" class="form-label fw-bold">Nº</label>
+                    <input type="number" name="n" id="n" placeholder="Nª" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="bairro" class="form-label fw-bold">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Bairro" class="form-control">
+                </div>
+                
+            </div>
+            <div class="row mt-4">
+                <div class="col-3">
+                    <label for="cidade" class="form-label fw-bold">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Cidade" class="form-control">
+                </div>
+                <div class="col-1">
+                    <label for="UF" class="form-label fw-bold">UF</label>
+                    <input type="text" name="UF" id="UF" placeholder="UF" class="form-control">
+                </div>
+                <div class="col-2">
+                    <label for="status" class="form-label fw-bold">Status</label>
+                    <select name="status" id="status" class="form-select fw-bold">
+                        <option selected>Selecione</option>
+                        <option value="ativado">Ativado</option>
+                        <option value="desativado">Desativado</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-4 mb-5">
+                <div class="col d-flex justify-content-end">
+                    <button type="reset" class="btn btn-danger me-1">Resetar</button>
+                    <button type="submit" class="btn btn-success">Próximo</button>
+                </div>
+            </div>
+        </form>
 </body>
