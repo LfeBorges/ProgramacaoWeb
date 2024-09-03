@@ -24,7 +24,7 @@
                     echo "Valor é zero";
                 }
             }
-            catch(Exepition $e)
+            catch(Exception $e)
             {
                 echo "Erro: " .$e->getMessage();
             }

@@ -7,7 +7,7 @@
     <title>Exercício 2</title>
 </head>
 <body>
-    <h1 class="ms-5 mt-5">Exercício 2</h1>
+    <h1 class="ms-5 mt-5">Exercício 1</h1>
     <form action="exer2resp.php" method="post" class="m-5">
         <div class="row">
             <div class="col">
