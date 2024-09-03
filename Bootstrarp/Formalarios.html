@@ -214,5 +214,54 @@
                 </div>
             </div>
         </form>
+        <h2 class="fs-5 mt-5">Formulário IV</h2>
+        <h5 class="fs-1 mt-3">Novo Usuário</h5>
+        <form action="reposta.php" method="post">
+            <div class="row">
+                <div class="col">
+                    <label for="NUnome" class="form-label">Nome: </label>
+                    <input type="text" name="NUnome" id="NUnome" class="form-control" placeholder="Informe o nome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 mt-4">
+                    <label for="NUcpf" class="form-label">CPF</label>
+                    <input type="number" id="NUcpf" name="Nucpf" class="form-control" placeholder="Informe seu cpf">
+                </div>
+                <div class="col-7 mt-4">
+                    <label for="endereco" class="form-label">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Infome o endereço">
+                </div>
+                <div class="col-2 mt-4">
+                    <label for="nivel" class="form-label">Nível</label>
+                    <select name="nivel" id="nivel" class="form-select">
+                        <option selected>Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mt-4">
+                    <label for="NUemail" class="form-label">Email</label>
+                    <input type="email" id="NUemail" name="NUemail" class="form-control" placeholder="Informe o email">
+                </div>
+                <div class="col-4 mt-4">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" name="senha" id="senha" class="form-control" placeholder="Infome a senha">
+                </div>
+                <div class="col-2 mt-4">
+                    <label for="NUstatus" class="form-label">Status</label>
+                    <select name="NUstatus" id="NUstatus" class="form-select">
+                        <option selected>Selecione</option>
+                        <option value="1">Ativado</option>
+                        <option value="2">Desativado</option>
+                    </select>
+                </div>
+            </div>
+        </form>
 
 </body>
