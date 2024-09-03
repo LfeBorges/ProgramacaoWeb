@@ -264,4 +264,67 @@
             </div>
         </form>
 
+        <h2 class="fs-5 mt-5">Formulário V</h2>
+        <h5 class="fs-1 mt-3">Billing address</h5>
+        <form action="reposta.php" method="post">
+            <div class="row mt-4">
+                <div class="col">
+                    <label for="firstname" class="form-label">First name</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="lastname" class="form-label">Last name</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <label for="username" class="form-label">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>  
+            <div class="row mt-4">
+                <label for="email" class="form-label">Email (Optional)</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="you@example.com">
+            </div>
+            <div class="row mt-4">
+                <label for="address1" class="form-label">Address</label>
+                <input type="address1" name="address1" id="address1" class="form-control" placeholder="123 Main st">
+            </div>
+            <div class="row mt-4">
+                <label for="address2" class="form-label">Address 2 (Optional)</label>
+                <input type="address2" name="address2" id="address2" class="form-control" placeholder="Aartment or suite">
+            </div>
+            <div class="row mt-4">
+                <div class="col-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select name="country" id="country" class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Estados Unidos">EUA</option>
+                        <option value="Canadá">Canadá</option>
+                        <option value="Japão">Japão</option>
+                    </select>
+                </div>
+                <div class="col-5">
+                    <label for="state" class="form-label">State</label>
+                    <select name="state" id="state" class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Estados Unidos">EUA</option>
+                        <option value="Canadá">Canadá</option>
+                        <option value="Japão">Japão</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <label for="zip" class="form-label">Zip</label>
+                    <input type="number" name="zip" id="zip" class="form-control">
+                </div>
+            </div>
+        </form>
+    </main>
+
 </body>
