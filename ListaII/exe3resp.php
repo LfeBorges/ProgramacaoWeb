@@ -13,21 +13,17 @@
     <div class="row">
         <div class="col m-3">
             <?php
-                if($_SERVER["REQUEST_METHOD"] == 'POST')
-                {
-                    try
-                    {
-                        $_valor1 = (int) $_POST["vlaor1"] ?? 0;
-                        $_valor2 = (int) $_POST["valor2"] ?? 0;
+            if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+                try {
+                    $_valor1 = (int) $_POST["vlaor1"] ?? 0;
+                    $_valor2 = (int) $_POST["valor2"] ?? 0;
 
-                        $_resulado = $_valor1 * $_valor2;
-                        echo "<p>A multiplicação dos dois valores é {$_resultado}</p>";
-                    }
-                    catch (Exception $e)
-                    {
-                        echo "ERRO" . $e ->getMessage();
-                    }
+                    $_resulado = $_valor1 * $_valor2;
+                    echo "<p>A multiplicação dos dois valores é {$_resultado}</p>";
+                } catch (Exception $e) {
+                    echo "ERRO" . $e->getMessage();
                 }
+            }
             ?>
         </div>
     </div>
