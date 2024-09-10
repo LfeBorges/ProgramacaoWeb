@@ -8,24 +8,19 @@
 </head>
 
 <body>
-	<h1>Resposta do exercicio 5</h1>
+	<h1>Resposta do exercicio 6</h1>
 	<?php
 	if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		try {
-			$nota1 = (float) $_POST['nota1'];
-			$nota2 = (float) $_POST['nota2'];
-			$nota3 = (float) $_POST['nota3'];
+			$celsius = (float) $_POST['celsius'];
 
-			$media = ($nota1 + $nota2 + $nota3) / 3;
+			$fahrenheit = ($celsius * 1.8) + 32;
 
-			echo "<p> A media deste aluno é $media </p>";
+			echo "<p> A temperatura em graus Fahrenheit é: $fahrenheit </p> ";
 		} catch (Exception $e) {
 			echo "Error: " . $e->getMessage();
 		}
 	}
-
-
-
 	?>
 </body>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercicio 5</h1>
-    <form action="exer4resp.php" method="POST"class="m-5">
+    <h1> Exercicio 5</h1>
+    <form action="exer5resp.php" method="POST" class="m-3">
         <div class="row">
             <div class="col">
-                <label for="valor1" class="form-label">Infome o valor 1: </label>
-                <input type="number" name="valor1" id="valor1" class="form-control">
+                <label for="nota1" class="form-label">Informe a nota da P1: </label>
+                <input type="number" name="nota1" id="nota1" class="form-control">
             </div>
             <div class="col">
-                <label for="valor2" class="form-label">Informe o valor 2: </label>
-                <input type="number" name="valor2" id="valor2" class="form-control">
+                <label for="nota2" class="form-label">Informe a nota da P2: </label>
+                <input type="number" name="nota2" id="nota2" class="form-control">
             </div>
+            <div class="col"> 
+                <label for="nota3" class="form-label">Informe a nota da P3: </label>
+                <input type="number" name="nota3" id="nota3" class="form-control">
+            </div>
+
         </div>
         <div class="row">
             <div class="col">
-                <button type="submit" class="btn btn-danger mt-2">Enviar</button>
+                <button type="submit" class="btn btn-dark mt-2">Enviar</button>
             </div>
         </div>
     </form>
