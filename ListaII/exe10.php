@@ -10,7 +10,7 @@
 
 <body>
 	<h1>Exercicio 10</h1>
-	<form action="exer10resp.php" method="POST" class="m-3">
+	<form action="exe10resp.php" method="POST" class="m-3">
 		<div class="row">
 			<div class="col">
 				<label for="largura" class="form-label">Informe a largura do retangulo: </label>

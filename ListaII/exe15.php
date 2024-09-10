@@ -10,7 +10,7 @@
 
 <body>
 	<h1>Exercicio 15</h1>
-	<form action="exer15resp.php" method="POST" class="m-3">
+	<form action="exe15resp.php" method="POST" class="m-3">
 		<div class="row">
 			<div class="col">
 				<label for="kg" class="form-label">Informe seu peso: </label>

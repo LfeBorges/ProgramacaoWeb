@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="respexer1.php" method="post">
+    <form action="exe1resp.php" method="post">
         <?php
         for ($i = 1; $i <= 7; $i++) { ?>
             <input type='number' name='valor<?= $i ?>'>

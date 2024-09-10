@@ -10,7 +10,7 @@
 
 <body>
     <h1>Exercicio 13</h1>
-    <form action="exer13resp.php" method="POST" class="m-3">
+    <form action="exe13resp.php" method="POST" class="m-3">
         <div class="row">
             <div class="col">
                 <label for="metros" class="form-label">Informe quantos metros: </label>

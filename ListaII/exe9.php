@@ -10,7 +10,7 @@
 
 <body>
 	<h1>Exercicio 9</h1>
-	<form action="exer9resp.php" method="POST" class="m-3">
+	<form action="exe9resp.php" method="POST" class="m-3">
 		<div class="row">
 			<div class="col">
 				<label for="raio" class="form-label">Informe o raio do circulo: </label>

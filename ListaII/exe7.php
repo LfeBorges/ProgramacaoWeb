@@ -10,7 +10,7 @@
 
 <body>
     <h1>Exercicio 6</h1>
-    <form action="exer7resp.php" method="POST" class="m-3">
+    <form action="exe7resp.php" method="POST" class="m-3">
         <div class="row">
             <div class="col">
                 <label for="fah" class="form-label">Informe a temperatura em graus Fahrenheit: </label>

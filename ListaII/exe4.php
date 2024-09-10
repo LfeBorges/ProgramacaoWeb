@@ -10,7 +10,7 @@
 
 <body>
     <h1>Exercicio 4</h1>
-    <form action="exer4resp.php" method="POST" class="m-5">
+    <form action="exe4resp.php" method="POST" class="m-5">
         <div class="row">
             <div class="col">
                 <label for="valor1" class="form-label">Infome o valor 1: </label>
