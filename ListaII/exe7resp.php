@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<h1>Resposta do exercicio 7</h1>
+	<h1>Resposta do exercicio 7</h1>
 	<?php
 	if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		try {

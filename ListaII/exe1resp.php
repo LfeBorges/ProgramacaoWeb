@@ -10,8 +10,8 @@
 
 <body>
     <h1>Resposta do Exercicio 1</h1>
-    <?php 
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         try {
             $valor1 = (int) $_POST['valor1'] ?? 0;
             $valor2 = (int) $_POST['valor2'] ?? 0;
