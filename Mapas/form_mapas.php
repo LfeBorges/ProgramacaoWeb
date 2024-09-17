@@ -17,15 +17,15 @@
     </form>
 
     <?php
-        if ($_SEVER['REQUEST_METHOD'] == "POST"){
+        if ($_SERVER['REQUEST_METHOD'] == "POST"){
             try{
                 $valores = $_POST['nomes'];
                 foreach($valores as $chave => $valor)
                     echo "<p>$chave : $valor </p>";
             }catch (Exception $e){
-                echo  $e->getMassage();
+                echo  $e->getMessage();
             }
-            $valores = $POST['nomes'];
+            $valores = $_POST['nomes'];
         }
     ?>
 </body>
