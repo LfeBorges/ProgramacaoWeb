@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Exercicio 20</h1>
-    <form action="exer10resp.php" method="POST" class="m-3">
+    <form action="exe20resp.php" method="POST" class="m-3">
         <div class="row">
             <div class="col">
                 <label for="distancia" class="form-label">Informe a distancia: </label>

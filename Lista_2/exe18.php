@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Exercicio 18</h1>
-    <form action="exer18resp.php" method="POST" class="m-3">
+    <form action="exe18resp.php" method="POST" class="m-3">
         <div class="row">
             <div class="col">
                 <label for="capital" class="form-label">Informe o capital: </label>
