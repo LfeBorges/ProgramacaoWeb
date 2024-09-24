@@ -14,7 +14,7 @@
 		<div class="row">
 			<div class="col">
 				<label for="valor" class="form-label">Informe o valor: </label>
-				<input type="number" name="valor1" id="valor1" class="form-control">
+				<input type="number" name="valor" id="valor" class="form-control">
 			</div>
 
 		</div>

@@ -18,7 +18,7 @@
 			</div>
 			<div class="col">
 				<label for="valorB" class="form-label">Valor B: </label>
-				<input type="number" class="form-control" name="valor2" id="valor2">
+				<input type="number" name="valor2" id="valor2"class="form-control">
 			</div>
 		</div>
 		<div class="row ">
