@@ -15,9 +15,9 @@ declare(strict_types=1);
 
 <body>
 	<?php
-	function validarData(int $day, int $month, int $year): string
+	function validarData(int $dia, int $mes, int $ano): string
 	{
-		if (checkdate($month, $day, $year)) {
+		if (checkdate($mes, $dia, $ano)) {
 			return 'Essa data é válida!';
 		} else {
 			return 'Essa data é inválida.';
@@ -26,11 +26,11 @@ declare(strict_types=1);
 
 	if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		try {
-			$day = (int) $_POST['day'];
-			$month = (int) $_POST['month'];
-			$year = (int) $_POST['year'];
+			$dia = (int) $_POST['Dia'];
+			$mes = (int) $_POST['Mes'];
+			$ano = (int) $_POST['Ano'];
 
-			$mensagem = validarData($day, $month, $year);
+			$mensagem = validarData($dia, $mes, $ano);
 		} catch (Exception $e) {
 			$mensagem = 'Erro: ' . $e->getMessage();
 		}

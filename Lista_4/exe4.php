@@ -14,16 +14,16 @@
 		<form action="exe4resp.php" method="post">
 			<div class="row mb-3">
 				<div class="col">
-					<label for="day" class="form-label">Informe o dia:</label>
-					<input type="number" name="day" id="day" class="form-control" placeholder="1-31" required>
+					<label for="ano" class="form-label">Informe o dia:</label>
+					<input type="number" name="dia" id="dia" class="form-control" placeholder="1-31" required>
 				</div>
 				<div class="col">
-					<label for="month" class="form-label">Informe o mês:</label>
-					<input type="number" name="month" id="month" class="form-control" placeholder="1-12" required>
+					<label for="ano" class="form-label">Informe o mês:</label>
+					<input type="number" name="mês" id="mês" class="form-control" placeholder="1-12" required>
 				</div>
 				<div class="col">
-					<label for="year" class="form-label">Informe o ano:</label>
-					<input type="number" name="year" id="year" class="form-control" placeholder="Ex: 2023" required>
+					<label for="ano" class="form-label">Informe o ano:</label>
+					<input type="number" name="ano" id="ano" class="form-control" placeholder="Ex: 2012" required>
 				</div>
 			</div>
 			<div class="row">
