@@ -1,3 +1,10 @@
+<?php
+      session_start();
+      if (!isset($_SESSION['acesso'])){
+          header('Location: login.php');
+      }
+?>
+
 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/dashboard">Sistema de Compras de Produtos</a>
@@ -52,6 +59,11 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Seja bem vindo(a) Usuário
+                    <?php
+                      
+                      if (isset($_SESSION['usuario']))
+                        echo $_SESSION['usuario']; 
+                    ?>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="editar_usuario.php">Editar dados</a></li>
