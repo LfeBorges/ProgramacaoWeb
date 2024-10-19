@@ -13,9 +13,11 @@ function login(string $email, string $senha){
     $usuario = $stament ->fetchALL(PDO::FETCH_ASSOC);
     //Verificar se o usuario não existe, se não existir , vamos criar
     if (!$usuario){
+        $pdo->beginTransaction();
         $senha = password_hash('adm', PASSWORD_BCRYPT);
         $stament = $pdo->prepare('INSERT INTO usuario (nome,email,senha,nivel) VALUES (?, ?, ?, ?)');
         $stament->execute(['Administrador','adm@adm.com', $senha, 'adm']);
+        $pdo->commit();
     }
 
 
