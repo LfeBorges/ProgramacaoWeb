@@ -15,7 +15,7 @@
         }
 
     } catch(Exception $e){
-        echo "ERRO:". $e->getMessege();
+        echo "ERRO: " . $e->getMessage();
     }
     
 
