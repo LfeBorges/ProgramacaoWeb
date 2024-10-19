@@ -18,9 +18,9 @@ function login(string $email, string $senha){
         $stament->execute(['Administrador','adm@adm.com', $senha, 'adm']);
     }
 
-    
+
     //Verificar email e senha do usuário
-    $stament = $pdo->prepare("SELECT * FROM usuario WHRE email = ?");
+    $stament = $pdo->prepare("SELECT * FROM usuario WHERE email = ?");
     //validar os valores com EXPRESSÕES REGULARES -validar se é uum email 
     $stament->execute([$email]);
     $usuario = $stament ->fetch(PDO::FETCH_ASSOC);
