@@ -11,9 +11,9 @@
             $nome = $_POST['nome'];
             $descricao = $_POST['descricao'];
             $preco = floatval($_POST['preco']);
-            $estoque_minimo = intval($POST['estoque_minimo']);
-            $categoria_id = intval($POST['categoria_id']);
-            if (empty($nome) || $empty($descricao)){
+            $estoque_minimo = intval($_POST['estoque_minimo']);
+            $categoria_id = intval($_POST['categoria_id']);
+            if ($empty($nome) ||$empty($descricao)){
                 $erro = "Informe os valores obrigatorios!";
             } else {
                 if (criarProduto($nome, $descricao, $preco, $estoque_minimo, $categoria_id)){
