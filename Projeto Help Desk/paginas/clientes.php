@@ -1,6 +1,7 @@
 <?php
-require_once('auth.php');
-require_once('config/bancodedados.php');
+require_once('../config/auth.php');
+require_once '../funcoes/clientes.php';
+require_once('../config/bancodedados.php');
 
 $pdo = getConexao();
 $stmt = $pdo->query("SELECT * FROM clientes");

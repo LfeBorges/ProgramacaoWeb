@@ -1,4 +1,3 @@
-// funcoes/usuarios.php
 <?php
 
 require_once('../config/bancodedados.php');

@@ -4,9 +4,9 @@ require_once('../config/bancodedados.php');
 
 $id = $_GET['id'];
 $pdo = getConexao();
-$stmt = $pdo->prepare("DELETE FROM clientes WHERE id = ?");
+$stmt = $pdo->prepare("DELETE FROM tecnicos WHERE id = ?");
 $stmt->execute([$id]);
 
-header("Location: clientes.php");
+header("Location: tecnicos.php");
 exit();
 ?>

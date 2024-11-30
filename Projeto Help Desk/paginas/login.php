@@ -2,26 +2,32 @@
 session_start();
 require_once('../config/bancodedados.php');
 
+$erro = ""; 
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'];
-    $senha = $_POST['senha'];
+    $username = $_POST['username'] ?? null;
+    $senha = $_POST['senha'] ?? null;
 
-    $pdo = getConexao();
-    $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE username = ? LIMIT 1");
-    $stmt->execute([$username]);
-    $usuario = $stmt->fetch();
+    if ($username && $senha) {
+        $pdo = getConexao();
+        $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE username = ? LIMIT 1");
+        $stmt->execute([$username]);
+        $usuario = $stmt->fetch();
 
-    if ($usuario && hash('sha256', $senha) === $usuario['senha']) {
-        $_SESSION['usuario'] = $usuario['username'];
-        header("Location: index.php");
-        exit();
+        if ($usuario && hash('sha256', $senha) === $usuario['senha']) {
+            $_SESSION['usuario'] = $usuario['username'];
+            header("Location: /paginas/dashboard.php");
+            exit();
+        } else {
+            $erro = "Usuário ou senha inválidos!";
+        }
     } else {
-        $erro = "Usuário ou senha inválidos!";
+        $erro = "Preencha todos os campos!";
     }
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
