@@ -6,7 +6,7 @@ $id = $_GET['id'];
 $pdo = getConexao();
 $stmt = $pdo->prepare("SELECT * FROM tecnicos WHERE id = ? LIMIT 1");
 $stmt->execute([$id]);
-$cliente = $stmt->fetch();
+$tecnico = $stmt->fetch();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'];
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php include('navbar.php'); ?>
 <div class="container mt-5">
     <h3>Editar Tecnico</h3>
-    <form method="POST" action="editar_cliente.php?id=<?= $id; ?>">
+    <form method="POST" action="editar_tecnico.php?id=<?= $id; ?>">
         <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" name="nome" id="nome" class="form-control" value="<?= $tecnico['nome']; ?>" required>
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="email" name="email" id="email" class="form-control" value="<?= $tecnico['email']; ?>" required>
         </div>
         <div class="mb-3">
-            <label for="telefone" class="form-label">Telefone</label>
+            <label for="telefone" class="form-label">Especialidade</label>
             <input type="text" name="telefone" id="telefone" class="form-control" value="<?= $tecnico['especialidade']; ?>">
         </div>
         <button type="submit" class="btn btn-primary">Salvar</button>

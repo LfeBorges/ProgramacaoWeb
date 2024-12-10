@@ -44,7 +44,7 @@ require_once '../funcoes/tipos_chamados.php';
                 <div class="card-body">
                     <h5 class="card-title">Chamados</h5>
                     <p class="card-text">Gerencie os chamados de suporte técnico.</p>
-                    <a href=".php" class="btn btn-primary">Ver Chamados</a>
+                    <a href="tipos_chamados.php" class="btn btn-primary">Ver Chamados</a>
                 </div>
             </div>
         </div>

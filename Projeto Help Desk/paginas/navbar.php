@@ -10,7 +10,7 @@
                     <li class="nav-item"><a class="nav-link" href="clientes.php">Clientes</a></li>
                     <li class="nav-item"><a class="nav-link" href="tecnicos.php">Técnicos</a></li>
                     <li class="nav-item"><a class="nav-link" href="tipos_chamados.php">Tipos de Chamados</a></li>
-                    <li class="nav-item"><a class="nav-link" href="registrar_atendimento.php">Atendimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="atendimentos.php">Atendimentos</a></li>
                     <li class="nav-item"><a class="nav-link text-danger" href="logout.php">Sair</a></li>
                 <?php else: ?>
                     <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>

@@ -5,7 +5,7 @@ require_once('../config/bancodedados.php');
 function login(string $email, string $senha): ?array {
     $pdo = getConexao();
     
-    // Validar email com regex antes de consultar o banco
+
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         return null;
     }

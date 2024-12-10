@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare("INSERT INTO tipos_chamados (descricao) VALUES (?)");
     $stmt->execute([$descricao]);
 
-    header("Location: tipos_chamados.php"); // Redireciona para a lista de tipos de chamados
+    header("Location: tipos_chamados.php"); 
     exit();
 }
 ?>
